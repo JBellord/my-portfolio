@@ -19,8 +19,8 @@ export default function Contact() {
           <Image
             src={"/profile.jpg"}
             className="rounded-full border-8 border-amber-500"
-            height={350}
-            width={350}
+            height={385}
+            width={385}
           />
         </div>
         <div className="h-full w-full space-y-4 px-4 flex flex-col items-start md:w-1/2">
