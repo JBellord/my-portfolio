@@ -14,7 +14,7 @@ export default function Bio() {
       id="bio"
       className="border rounded-2xl bg-background/75 backdrop-blur-sm w-full h-full px-12 py-12 space-x-4 flex items-start justify-end flex-col md:border-none md:bg-transparent md:h-screen md:px-0"
     >
-      <div className="backdrop-blur-sm space-y-4 rounded-2xl p-0 h-11/12 w-full flex flex-col items-center text-center justify-center md:w-1/2 md:text-left md:items-start md:border md:rounded-4xl md:bg-background/75 md:p-24 md:backdrop-blur-sm">
+      <div className="backdrop-blur-sm space-y-4 rounded-2xl p-0 h-11/12 w-full flex flex-col items-center text-center justify-center md:w-1/2 md:text-left md:items-start md:border md:rounded-4xl md:bg-background/75 md:p-20 md:backdrop-blur-sm">
         <span>
           Hey 👋, I'm <br />
         </span>
