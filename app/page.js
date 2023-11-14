@@ -32,8 +32,8 @@ export default function Home() {
         sizes="100vw"
         style={{ objectFit: "cover" }}
       />
-      <div className="relative h-full w-full p-0 m-0 backdrop-blur-sm text-foreground flex justify-center items-center">
-        <div className="relative h-full w-full mt-16 py-8 md:p-0 md:mt-0 md:w-8/12">
+      <div className="relative h-full w-full p-0 m-0 backdrop-blur-0 text-foreground flex justify-center items-center">
+        <div className="relative h-full w-11/12 mt-16 py-8 px-2 md:p-0 md:mt-0 md:w-9/12">
           <Bio />
           <Projects />
         </div>
@@ -47,24 +47,24 @@ function Navbar() {
   const { setTheme } = useTheme();
 
   return (
-    <div className="bg-transparent z-10 fixed m-0 h-16 w-full px-0 py-4 flex justify-center items-center top-0 left-0">
-      <div className="relative z-20 w-full h-full flex items-center justify-between md:w-10/12">
-        <span className=" font-bold text-3xl">
+    <div className="bg-transparent z-10 fixed m-0 h-24 w-full px-0 py-4 flex justify-center items-center top-0 left-0">
+      <div className="relative z-20 w-11/12 h-9/12 bg-background/70 backdrop-blur-sm flex items-center justify-between px-5 py-2 rounded-full border md:px-10 md:w-10/12">
+        <span className="ml-2 font-bold text-3xl">
           ji<span className="text-amber-500">o</span>.
         </span>
         <div className="flex justify-start items-center h-full">
-          <div className="flex justify-evenly items-center space-x-6">
-            <div className="font-semibold">
+          <div className="hidden md:flex md:justify-evenly md:items-center md:space-x-6">
+            <Button variant="ghost" className="font-semibold">
               <Link href={"#bio"}>Bio</Link>
-            </div>
-            <div className="font-semibold">
+            </Button>
+            <Button variant="ghost" className="font-semibold">
               <Link href={"#projects"}>Projects</Link>
-            </div>
-            <div className="font-semibold">
+            </Button>
+            <Button variant="ghost" className="font-semibold">
               <Link href={"#contact"}>Contact</Link>
-            </div>
+            </Button>
           </div>
-          <Separator orientation="vertical" className="m-6" />
+          <Separator orientation="vertical" className="m-6 hidden md:block" />
           <DropdownMenu>
             <DropdownMenuTrigger asChild>
               <Button variant="ghost" size="icon">

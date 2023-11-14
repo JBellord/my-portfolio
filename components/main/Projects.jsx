@@ -21,20 +21,16 @@ import {
   ShadowNoneIcon,
 } from "@radix-ui/react-icons";
 
-import { Roboto_Mono } from "next/font/google";
-
-const roboto_mono = Roboto_Mono({ subsets: ["latin"] });
-
 export default function Projects() {
   return (
     <div
       id="projects"
-      className="h-full w-full py-16 px-12 text-center md:min-h-screen md:px-6 md:py-24 md:text-left"
+      className="relative border rounded-2xl bg-background/75 backdrop-blur-sm h-full w-full my-16 px-6 py-12 md:min-h-screen md:p-24 md:my-24 md:text-left"
     >
-      <h1 className={`${roboto_mono.className} text-4xl font-semibold mb-10`}>
+      <h1 className={`text-3xl font-semibold mb-10 md:text-4xl`}>
         Projec<span className="text-amber-500">t</span>s
       </h1>
-      <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
+      <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
         <ListItem
           name={"Speedforms"}
           description={
@@ -96,7 +92,7 @@ function ListItem({ name, description }) {
           {name}
           <ArrowTopRightIcon />
         </span>
-        <span className="font-light text-sm">{description}</span>
+        <span className="text-left font-light text-sm">{description}</span>
       </div>
       <div className="h-full w-full p-0 flex flex-wrap justify-start items-start">
         <Badge className="bg-foreground mr-1 mt-2">
@@ -117,36 +113,5 @@ function ListItem({ name, description }) {
         </Badge>
       </div>
     </div>
-  );
-}
-
-function PCard({ name, description, tools }) {
-  return (
-    <Card className="w-full md:w-[310px]">
-      <CardHeader>
-        <CardTitle className="w-full font-bold text-2xl md:text-3xl">
-          {name}
-        </CardTitle>
-        <CardDescription>{description}</CardDescription>
-      </CardHeader>
-      <CardContent>
-        <div className="flex space-x-2">
-          <div className="rounded-full bg-foreground border-2 border-card-foreground p-1">
-            <IconBrandPython className="stroke-background h-5 w-5" />
-          </div>
-          <div className="rounded-full bg-foreground border-2 border-card-foreground p-1">
-            <IconBrandTelegram className="stroke-background h-5 w-5" />
-          </div>
-          <div className="rounded-full bg-foreground border-2 border-card-foreground p-1">
-            <IconBrandVercel className="stroke-background h-5 w-5" />
-          </div>
-        </div>
-      </CardContent>
-      <CardFooter>
-        <Button className="w-full font-semibold">
-          Read More <ArrowTopRightIcon className="h-4 w-4" />
-        </Button>
-      </CardFooter>
-    </Card>
   );
 }

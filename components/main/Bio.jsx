@@ -7,22 +7,19 @@ import {
   TwitterLogoIcon,
 } from "@radix-ui/react-icons";
 import { Separator } from "../ui/separator";
-import { Roboto_Mono } from "next/font/google";
-
-const roboto_mono = Roboto_Mono({ subsets: ["latin"] });
 
 export default function Bio() {
   return (
     <div
       id="bio"
-      className="w-full h-full px-12 py-18 space-x-4 flex items-start justify-end flex-col md:h-screen md:px-0"
+      className="border rounded-2xl bg-background/75 backdrop-blur-sm w-full h-full px-12 py-12 space-x-4 flex items-start justify-end flex-col md:border-none md:bg-transparent md:h-screen md:px-0"
     >
-      <div className="space-y-4 rounded-2xl p-0 h-4/5 w-full flex flex-col items-center text-center justify-center md:w-1/2 md:p-6 md:text-left md:items-start">
+      <div className="backdrop-blur-sm space-y-4 rounded-2xl p-0 h-4/5 w-full flex flex-col items-center text-center justify-center md:w-1/2 md:text-left md:items-start md:border md:rounded-4xl md:bg-background/75 md:p-24 md:backdrop-blur-sm">
         <span>
           Hey 👋, I'm <br />
         </span>
-        <h1 className={`${roboto_mono.className} text-8xl font-bold`}>
-          JI<span className="text-amber-500">0</span>.
+        <h1 className={`text-8xl font-bold`}>
+          Ji<span className="text-amber-500">o</span>
         </h1>
         <span className="text-lg font-semibold text-amber-500 mb-6">
           Student & Web Developer
