@@ -25,9 +25,9 @@ export default function Projects() {
   return (
     <div
       id="projects"
-      className="relative border rounded-2xl bg-background/75 backdrop-blur-sm h-full w-full my-16 px-6 py-12 md:min-h-screen md:p-24 md:my-24 md:text-left"
+      className="relative border rounded-2xl bg-background/75 backdrop-blur-sm h-full w-full my-16 p-8 md:min-h-screen md:p-20 md:my-24 md:text-left"
     >
-      <h1 className={`text-3xl font-semibold mb-10 md:text-4xl`}>
+      <h1 className={`text-2xl font-semibold mb-10 md:text-4xl`}>
         Projec<span className="text-amber-500">t</span>s
       </h1>
       <div className="grid grid-cols-1 gap-6 md:grid-cols-2">

@@ -19,7 +19,7 @@ export default function Bio() {
           Hey 👋, I'm <br />
         </span>
         <h1 className={`text-8xl font-bold`}>
-          Ji<span className="text-amber-500">o</span>
+          ji<span className="text-amber-500">o</span>.
         </h1>
         <span className="text-lg font-semibold text-amber-500 mb-6">
           Student & Web Developer

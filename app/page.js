@@ -19,6 +19,7 @@ import {
 import { SunIcon } from "@radix-ui/react-icons";
 import { Button } from "@/components/ui/button";
 import { MoonIcon } from "@radix-ui/react-icons";
+import Contact from "@/components/main/Contact";
 
 export default function Home() {
   return (
@@ -36,6 +37,7 @@ export default function Home() {
         <div className="relative h-full w-11/12 mt-16 py-8 px-2 md:p-0 md:mt-0 md:w-9/12">
           <Bio />
           <Projects />
+          <Contact />
         </div>
       </div>
       <Footer />
@@ -47,7 +49,7 @@ function Navbar() {
   const { setTheme } = useTheme();
 
   return (
-    <div className="bg-transparent z-10 fixed m-0 h-24 w-full px-0 py-4 flex justify-center items-center top-0 left-0">
+    <div className="bg-transparent z-10 fixed m-0 h-24 w-full px-0 py-2 flex justify-center items-center top-0 left-0">
       <div className="relative z-20 w-11/12 h-9/12 bg-background/70 backdrop-blur-sm flex items-center justify-between px-5 py-2 rounded-full border md:px-10 md:w-10/12">
         <span className="ml-2 font-bold text-3xl">
           ji<span className="text-amber-500">o</span>.
