@@ -22,6 +22,7 @@ export default function Contact() {
             x
             alt="snazzy-map"
             sizes="100vw"
+            placeholder="blur"
             style={{
               height: "auto",
               width: "100%",

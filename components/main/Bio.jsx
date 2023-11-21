@@ -77,6 +77,7 @@ export default function Bio() {
             src={profile}
             alt="profile"
             className="rounded-full border-8 border-amber-500 p-0 m-0"
+            placeholder="blur"
             sizes={"100vw"}
             style={{
               width: "100%",
