@@ -31,20 +31,20 @@ export default function Contact() {
         </div>
         <div className="h-full w-full px-1 space-y-4 flex flex-col items-start md:px-4 md:w-1/2">
           <Input
-            className="h-16 p-4 text-lg w-full m-0"
+            className="h-16 p-4 text-md w-full m-0"
             type="text"
             placeholder="Name"
           />
           <Input
-            className="h-16 p-4 text-lg w-full"
+            className="h-16 p-4 text-md w-full"
             type="email"
             placeholder="Email"
           />
           <Textarea
-            className="relative p-4 h-96 text-lg w-full"
+            className="relative p-4 h-96 text-md w-full"
             placeholder="Type your message here"
           />
-          <Button size="lg" className="font-semibold px-10 py-6 text-lg w-full">
+          <Button size="lg" className="font-semibold px-8 py-4 text-md w-full">
             Submit
           </Button>
         </div>
