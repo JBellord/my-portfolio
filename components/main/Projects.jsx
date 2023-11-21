@@ -139,7 +139,7 @@ export default function Projects() {
           name={"Wryte"}
           link={"https://wryte.onrender.com/editor"}
           description={
-            "A smart and simple way to create engaging and effective surveys with the power of artificial intelligence."
+            "Where creativity meets efficiency, an AI-powered online text editor that transforms your words into wonders with just a click"
           }
           tools={[
             stack.javascript,
@@ -154,7 +154,7 @@ export default function Projects() {
           name={"Comic Client"}
           link={"https://github.com/JBellord/Comic-Client"}
           description={
-            "A smart and simple way to create engaging and effective surveys with the power of artificial intelligence."
+            "Comic Client is a Python script designed to seamlessly search, download, and upload comics in PDF format, streamlining the process of managing and enjoying your digital comic collection."
           }
           tools={[stack.python, stack.github]}
         />
@@ -162,23 +162,21 @@ export default function Projects() {
           name={"Wallter"}
           link={"https://github.com/JBellord/Telegram-Bot"}
           description={
-            "A smart and simple way to create engaging and effective surveys with the power of artificial intelligence."
+            "Wallter is a versatile Python Telegram bot, that performs fucntions such as delivering dad jokes, stunning wallpapers, and harnessing the power of AI for an engaging user experience."
           }
           tools={[stack.python, stack.telegram, stack.openai, stack.api]}
         />
         <ListItem
           name={"Portfolio"}
           link={"https://jiob.xyz"}
-          description={
-            "A smart and simple way to create engaging and effective surveys with the power of artificial intelligence."
-          }
+          description={"My personal portfolio, built by me."}
           tools={[stack.javascript, stack.nextjs, stack.tailwind, stack.shadcn]}
         />
         <ListItem
           name={"Pajer (Concept)"}
           link={"https://pajer.vercel.app"}
           description={
-            "A smart and simple way to create engaging and effective surveys with the power of artificial intelligence."
+            "Pajer is a frontend concept of an online news aggregator with just theh landing reader and discover."
           }
           tools={[stack.nextjs, stack.vercel, stack.javascript, stack.css]}
         />
@@ -186,7 +184,7 @@ export default function Projects() {
           name={"Movify"}
           link={"https://movify-app.vercel.app"}
           description={
-            "A smart and simple way to create engaging and effective surveys with the power of artificial intelligence."
+            "Movify is an online TV and movies recommendation website, seamlessly delivers personalized suggestions using TheMovieDB API to enhance your entertainment experience."
           }
           tools={[
             stack.react,
