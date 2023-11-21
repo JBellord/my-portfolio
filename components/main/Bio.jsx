@@ -7,12 +7,15 @@ import {
   TwitterLogoIcon,
 } from "@radix-ui/react-icons";
 import { Separator } from "../ui/separator";
+import Link from "next/link";
+import Image from "next/image";
+import profile from "../../public/profile.jpg";
 
 export default function Bio() {
   return (
     <div
       id="bio"
-      className="border rounded-2xl bg-background/75 backdrop-blur-sm w-full h-full px-12 py-12 space-x-4 flex items-start justify-end flex-col md:border-none md:bg-transparent md:h-screen md:px-0"
+      className="border rounded-2xl bg-background/75 backdrop-blur-sm w-full h-full p-6 flex items-center justify-start flex-col-reverse md:flex-row md:border-none md:bg-transparent md:h-screen md:px-0"
     >
       <div className="backdrop-blur-sm space-y-4 rounded-2xl p-0 h-11/12 w-full flex flex-col items-center text-center justify-center md:w-1/2 md:text-left md:items-start md:border md:rounded-4xl md:bg-background/75 md:p-20 md:backdrop-blur-sm">
         <span>
@@ -46,31 +49,42 @@ export default function Bio() {
         <Separator className="mt-4 mb-0" />
         <br />
         <div className="flex items-center space-x-3 text-foreground">
-          <Button size="icon" className="rounded-full bg-amber-500">
-            <GitHubLogoIcon className="h-5 w-5" />
-          </Button>
-          <Button size="icon" className="rounded-full bg-amber-500">
-            <TwitterLogoIcon className="h-5 w-5" />
-          </Button>
-          <Button size="icon" className="rounded-full bg-amber-500">
-            <LinkedInLogoIcon className="h-5 w-5" />
-          </Button>
-          <Button size="icon" className="rounded-full bg-amber-500">
-            <EnvelopeClosedIcon className="h-5 w-5" />
-          </Button>
+          <Link href={"https://github.com/JBellord"}>
+            <Button size="icon" className="rounded-full bg-amber-500">
+              <GitHubLogoIcon className="h-5 w-5" />
+            </Button>
+          </Link>
+          <Link href={"https://twitter.com/JBelloOro"}>
+            <Button size="icon" className="rounded-full bg-amber-500">
+              <TwitterLogoIcon className="h-5 w-5" />
+            </Button>
+          </Link>
+          <Link href={"https://www.linkedin.com/in/john-bello-oro-9545311b4"}>
+            <Button size="icon" className="rounded-full bg-amber-500">
+              <LinkedInLogoIcon className="h-5 w-5" />
+            </Button>
+          </Link>
+          <Link href={"mailto:ifeoluwatomijohn@gmail.com"}>
+            <Button size="icon" className="rounded-full bg-amber-500">
+              <EnvelopeClosedIcon className="h-5 w-5" />
+            </Button>
+          </Link>
         </div>
       </div>
-      {/* <div className="h-4/5 w-1/2 rounded-2xl flex justify-end items-center">
-            <div className="w-[380px] h-[380px] rounded-full bg-amber-500 flex items-center justify-center">
-              <Image
-                className="rounded-full border-4 border-background"
-                src={"/profile.jpg"}
-                width={370}
-                height={370}
-                objectFit="fill"
-              />
-            </div>
-          </div> */}
+      <div className="p-0 m-0 h-full w-full flex items-center justify-center flex-col mb-10 md:w-1/2 md:mb-0">
+        <div className="w-64 h-64 md:w-96 md:h-96">
+          <Image
+            src={profile}
+            alt="profile"
+            className="rounded-full border-8 border-amber-500 p-0 m-0"
+            sizes={"100vw"}
+            style={{
+              width: "100%",
+              height: "auto",
+            }}
+          />
+        </div>
+      </div>
     </div>
   );
 }

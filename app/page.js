@@ -34,7 +34,7 @@ export default function Home() {
         style={{ objectFit: "cover" }}
       />
       <div className="relative h-full w-full p-0 m-0 backdrop-blur-0 text-foreground flex justify-center items-center">
-        <div className="relative h-full w-11/12 mt-16 py-8 px-2 md:p-0 md:mt-0 md:w-9/12">
+        <div className="relative h-full w-11/12 mt-16 py-8 px-1 md:p-0 md:mt-0 md:w-9/12">
           <Bio />
           <Projects />
           <Contact />
