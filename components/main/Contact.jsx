@@ -16,7 +16,7 @@ export default function Contact() {
         Conta<span className="text-amber-500">c</span>t
       </h1>
       <div className="relative overflow-hidden flex flex-col items-center justify-center md:space-x-4 md:flex-row md:items-start">
-        <div className="h-full w-full flex items-center justify-center md:w-1/2">
+        <div className="h-full w-full flex items-center justify-center mb-4 md:w-1/2 md:mb-0">
           <Image
             src={snazzy}
             x
